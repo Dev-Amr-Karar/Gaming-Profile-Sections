@@ -1,0 +1,301 @@
+/* Start Global Rulls */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #eee;
+	padding: 15px 0;
+	font-family: sans-serif;
+	text-transform: capitalize;
+}
+
+.container {
+	padding: 15px;
+	margin: auto;
+	background-color: #fff;
+}
+
+section {
+	padding: 0 15px;
+}
+
+/* Start Mobile Screen Container */
+@media (min-width: 768px) {
+	.container {
+		width: 750px;
+	}
+}
+
+/* Start Meduim Screen Container */
+@media (min-width: 992px) {
+	.container {
+		width: 970px;
+	}
+}
+/* Start Large Screen Container */
+@media (min-width: 1200) {
+	.container {
+		width: 1170px;
+	}
+}
+
+h1,
+h2,
+h3 {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.heading {
+	background-color: #607d8b;
+	padding: 15px;
+	color: #fff;
+	width: fit-content;
+	margin-bottom: 20px;
+}
+
+/* End Global Rulls */
+
+/* Start Profile Scetion */
+
+.profile {
+	margin-bottom: 30px;
+}
+
+.profile .container {
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	gap: 1px;
+	background-color: transparent;
+	padding: 0;
+}
+
+@media (max-width: 660px) {
+	.profile .container {
+		grid-template-columns: 1fr;
+	}
+}
+
+.profile-info {
+	background-color: #fff;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.profile-info .img-box {
+	width: 60%;
+	max-width: 100px;
+	margin-bottom: 10px;
+}
+
+.profile-info img {
+	max-width: 100%;
+	border: 3px solid #ddd;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+
+.profile-info .level strong {
+	font-weight: 900;
+	margin-bottom: 15px;
+	display: inline-flex;
+	color: #222;
+}
+
+.profile-info .level .progress {
+	width: 100%;
+	height: 15px;
+	background-color: #eee;
+	margin-bottom: 15px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+}
+
+.level .progress .progress-bar {
+	height: 15px;
+	width: 70%;
+	background-color: #27ae60;
+	display: block;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.profile-info .level p {
+	font-size: 0.8rem;
+	color: #999;
+}
+
+.level p span {
+	color: #27ae60;
+	font-weight: bold;
+}
+
+.profile-description {
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 15px;
+}
+
+@media (max-width: 660px) {
+	.profile-description {
+		text-align: center;
+	}
+}
+
+.profile-description h1 {
+	font-size: 1.5rem;
+	margin-bottom: 15px;
+	color: #222;
+}
+
+.profile-description p {
+	color: #999;
+	line-height: 1.7;
+	font-weight: lighter;
+}
+
+.profile-description p:last-child {
+	font-size: 0.8rem;
+	color: #999;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	height: 60px;
+}
+
+/* End Profile Scetion */
+
+/* Start Log Section */
+.log {
+	margin-bottom: 45px;
+}
+
+.log h2 {
+	margin-bottom: 10px;
+}
+
+.log p {
+	color: #999;
+	padding: 15px 0;
+	line-height: 1.5;
+}
+
+.log p:nth-of-type(2) {
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: 20px 0;
+}
+
+.log p span:first-child {
+	color: #27ae60;
+	font-weight: bold;
+}
+
+.log span:last-child {
+	color: #e91e72;
+	font-weight: bold;
+}
+/* End Log Section */
+
+/* Start Trophies Section */
+
+.trophies {
+	margin-bottom: 45px;
+}
+
+.trophies .trophies-content {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+	gap: 0 5px;
+}
+
+.trophies-content .img-box {
+	width: 100%;
+}
+
+.trophies-content .img-box img {
+	width: 100%;
+}
+
+/* End Trophies Section */
+
+/* Start Ladder Section */
+.ladder {
+	margin-bottom: 45px;
+}
+
+.ladder p {
+	color: #999;
+	line-height: 1.5;
+}
+
+.ladder span {
+	font-weight: bold;
+}
+
+.ladder span:first-child {
+	color: #2196f3;
+}
+
+.ladder span:last-child {
+	color: #f44336;
+}
+
+/* End Ladder Section */
+
+/* Start Powers Section */
+.powers p {
+	display: flex;
+	justify-content: space-between;
+	color: #999;
+	padding: 15px 0;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+
+.powers p:last-of-type,
+.powers p:first-of-type {
+	border: none;
+}
+
+.powers p:first-of-type {
+	padding-bottom: 15px;
+}
+
+.powers p:last-of-type {
+	padding-top: 15px;
+}
+
+.powers p span.yes {
+	color: #27ae60;
+	font-weight: bold;
+}
+
+.powers p span.no {
+	color: #f44336;
+	font-weight: bold;
+}
+/* End Powers Section */
